@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="image/logo.png">
+        </a>
+       
+       
+        <nav class="headbar">
+          <a href="index.html ">Home</a>
+          <a href="login.html">Login</a>
+          <a href="doctor_consaltant_page.html">Doctor</a>
+          <a href="med.html">Medicine</a>
+          <a href="service.html">Service</a>
+          <a href="contact.html">Contact</a>
+      </nav>
+        <div class="menubtn">
+            <button>helpline </button>
+        </div>   
+    </header>
+    <div class="container" id="container">
+         <div class="form sign-up-container">
+             <form action="#">
+                <h1>Create An Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+                  </div>
+                  <span>or use your email registration</span>
+                  <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="username">
+                  </div>
+
+                  <div class="input-field">
+                    <i class="fa fa-envelope "></i>
+                    <input type="email" placeholder="email">
+                  </div>
+
+                  <div class="input-field">
+                     <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="password">
+                  </div >
+                       
+                     <button type="submit">Sign up</button>
+                </form>      
+            </div>
+            <div class="form sign-in-container">
+              <form action="#">
+                 <h1>Login</h1>
+                 <div class="social-container">
+                     <a href="#" class="social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                     <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+                     <a href="#" class="social"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+ 
+                   </div>
+                   <span>or use your account</span>
+                   <div class="input-field">
+                     <i class="fa fa-user"></i>
+                     <input type="text" placeholder="username">
+                   </div>
+ 
+                 
+ 
+                   <div class="input-field">
+                     <i class="fa fa-lock"></i>
+                     <input type="password" placeholder="password">
+                   </div >
+                        <a href="#">Forget your password</a>
+                      <button >Sign In</button>
+                 </form>      
+             </div>
+             <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                  <h1>Welcome back!</h1>
+                  <p>To keep connected with us please login with 
+                    your personal info</p>
+               <img src="image/s1.png" style="height:25rem; width:30rem; padding-top:5%">
+               <button class="btn" id="signin">sign in</button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                  <h1>hello user!</h1>
+                  <p>Enter your personal details and start your journey with us</p>
+               <img src="image/s3.png" style="height:25rem; width:30rem;">
+               <button class="btn" id="signup">sign up</button>
+                </div>
+              </div> 
+              </div>
+             
+
+         </div>
+         <script>
+           const signupbutton=document.getElementById('signup');
+           const signinbutton=document.getElementById('signin');
+           const container=document.getElementById('container');
+           signupbutton.addEventListener('click',()=>{
+            container.classList.add("right-panel-active");
+           });
+
+           signinbutton.addEventListener('click',()=>{
+            container.classList.remove("right-panel-active");
+           });
+         </script>
+    </body>
+   </html>
